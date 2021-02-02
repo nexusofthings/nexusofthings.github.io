@@ -9,7 +9,7 @@ tags:
 ---
 
 
-#Welcome to the NEXUS of things. I'm a Biostatistician by profession with nearly 10 years of experience in the field. Along my career I have had opportunity to use different  #software products like MS-Excel, SPSS, Stata, SAS and of course R & Python to analyse various datasets. This place is my personal-public repository of  planning to create a #respository of 
+#Welcome to the NEXUS of things. I'm a Biostatistician by profession with nearly 10 years of experience in the field. Along my career I have had opportunity to use different  software products like MS-Excel, SPSS, Stata, SAS and of course R & Python to analyse various datasets. This place is my personal-public repository of  planning to create a respository of 
  
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
