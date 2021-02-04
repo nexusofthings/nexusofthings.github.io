@@ -6,4 +6,5 @@
 - R markdown
 - R blogdown
 - Tricks with markdown
+- Creation of demo datasets (for posting it on forums etc.)
 
