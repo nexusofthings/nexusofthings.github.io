@@ -1,5 +1,6 @@
 ---
 title: "Managing long and wide data formats"
+date: 2021-01-03
 categories:
   - Blog
 tags:
