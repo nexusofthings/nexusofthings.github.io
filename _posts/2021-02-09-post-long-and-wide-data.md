@@ -1,5 +1,5 @@
 ---
-title: "Post: Managing long and wide data formats"
+title: "Managing long and wide data formats"
 categories:
   - Blog
 tags:
