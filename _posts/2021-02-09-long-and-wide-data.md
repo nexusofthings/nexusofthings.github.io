@@ -12,5 +12,13 @@ This is one of the most widely used operations in exploratory phase of any analy
 
 https://stackoverflow.com/questions/25925556/gather-multiple-sets-of-columns?answertab=active#tab-top
 
+https://jhudatascience.org/tidyversecourse/wrangle-data.html#reshaping-the-data
+
+https://tidyr.tidyverse.org/articles/pivot.html
+
+https://rdatatable.gitlab.io/data.table/
+
+
+
 
 
