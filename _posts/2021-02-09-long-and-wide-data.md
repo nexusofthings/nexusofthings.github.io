@@ -12,7 +12,7 @@ This is one of the most widely used operations in exploratory phase of any analy
 
 Load [tidyverse](https://www.tidyverse.org/) set of packages to replicate things below.
 
-![image](/assets/images/-long-and-wide-data-formats-for-data-analysis1.jpg)
+![image](/assets/images/Managing-long-and-wide-data-formats-for-data-analysis1.jpg)
 
 ```
 library(tidyverse)
