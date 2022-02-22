@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Thomas Anderson"
-  avatar : "/assets/images/TheMatrix.jpg" #default was a blank icon type of bio-photo
+  avatar : "/assets/images/bio-photo.png" #default was a blank icon type of bio-photo
   bio    : "My personal-public space for learning-sharing"
   links:
     - label: "Website"
