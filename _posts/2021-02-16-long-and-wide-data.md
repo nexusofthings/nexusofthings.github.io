@@ -1,6 +1,6 @@
 ---
 title: "Managing long and wide data formats for data analysis"
-date: 2021-01-03
+date: 2021-02-16
 categories:
   - Wrangling Data
 tags:
