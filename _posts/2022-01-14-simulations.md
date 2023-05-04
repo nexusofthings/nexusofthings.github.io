@@ -31,5 +31,5 @@ I have tried a few of them and noting down few observations here.
 
 References:
 
-There is a nice article on using simulations studies to evaluate statistical methods and introduction to simulation studies in health research.
+There is a nice article on [Using simulations studies to evaluate statistical methods](https://onlinelibrary.wiley.com/doi/10.1002/sim.8086) written by [Tim Morris](https://twitter.com/tmorris_mrc) and [Introduction to simulation studies in health research(https://bmjopen.bmj.com/content/10/12/e039921)
 
