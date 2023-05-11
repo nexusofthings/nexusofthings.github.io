@@ -15,3 +15,6 @@ https://www.dovepress.com/peer-review-guidelines/reviewer-training-programme
 
 
 F1000 research has a different (than usual) process of reviewing - https://f1000research.com/for-authors/peer-review 
+
+
+https://plos.org/resources/for-reviewers/ PLoS has excellent resources
