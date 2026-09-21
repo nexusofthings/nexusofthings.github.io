@@ -1,0 +1,63 @@
+---
+title: "Curriculum vitae"
+subtitle: "{{< var role >}}"
+listing:
+  - id: cv-experience
+    contents: data/experience.yml
+    template: templates/experience.ejs
+    type: default
+    sort: false
+    page-size: 1000
+    fields: [period, title, org, org_url, location, bullets, hidden]
+  - id: cv-publications
+    contents: data/publications.yml
+    template: templates/publications.ejs
+    type: default
+    sort: false
+    page-size: 1000
+    fields: [type, year, authors, title, venue, details, doi, url, note, links, hidden]
+  - id: cv-conferences
+    contents: data/conferences.yml
+    template: templates/conferences.ejs
+    type: default
+    sort: false
+    page-size: 1000
+    fields: [year, title, kind, event, location, when, note, links, hidden]
+  - id: cv-teaching
+    contents: data/teaching.yml
+    template: templates/teaching.ejs
+    type: default
+    sort: false
+    page-size: 1000
+    fields: [title, audience, where, period, summary, topics, links, hidden]
+---
+
+This page is assembled from the same data files as the other pages, so it is always current. Use your browser's print dialog (Ctrl/Cmd + P) to save it as a PDF.
+
+---
+
+## Experience
+
+::: {#cv-experience}
+:::
+
+---
+
+## Publications
+
+::: {#cv-publications}
+:::
+
+---
+
+## Conferences
+
+::: {#cv-conferences}
+:::
+
+---
+
+## Teaching
+
+::: {#cv-teaching}
+:::

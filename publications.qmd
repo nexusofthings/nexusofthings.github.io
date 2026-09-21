@@ -1,0 +1,15 @@
+---
+title: "Publications"
+subtitle: "Peer-reviewed publications, reports and preprints"
+listing:
+  contents: data/publications.yml
+  template: templates/publications.ejs
+  type: default
+  sort: false
+  page-size: 1000
+  fields: [type, year, authors, title, venue, details, doi, url, note, links, hidden]
+---
+
+Journal articles, technical reports and preprints.
+
+---

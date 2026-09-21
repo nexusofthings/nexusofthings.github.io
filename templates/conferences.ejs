@@ -1,0 +1,43 @@
+<%_
+/* QUARTO EJS QUIRK: in Quarto listing templates the "equals" output tag prints RAW html and the
+   "dash" output tag ESCAPES it (the reverse of stock EJS). All escaping is done by esc() and md()
+   below, so the final print at the bottom of each template uses the "equals" tag.
+
+   OUTPUT RULES. Quarto runs this template's output through a markdown parser:
+     - put each HTML element on its own line, starting with a tag;
+     - never emit a blank line (drop empty strings before joining);
+     - never indent lines (4+ spaces starts a code block).
+   Each template therefore builds its output as an array of lines and prints it once at the end.
+
+   Tiny markdown helpers, so YAML text can use **bold**, *italic* and [text](url).
+   Input is HTML-escaped first, so a stray < or & can never break the page. */
+const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/_/g, "&#95;");
+const md = s => esc(s)
+  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, "<a href=\"$2\">$1</a>")
+  .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+  .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>");
+const linkList = arr => (arr || []).map(l => '<a href="' + esc(l.url) + '">' + esc(l.label) + '</a>').join("");
+const lines = arr => arr.flat(Infinity).filter(Boolean).join("\n");
+const visible = items.filter(i => !i.hidden);
+
+const years = [...new Set(visible.map(c => String(c.year)))].sort((a, b) => Number(b) - Number(a));
+
+const conf = c => '<li>'
+  + '<strong>' + md(c.title) + '</strong>' + (c.kind ? ' <span class="kind">(' + esc(c.kind) + ')</span>' : '') + '<br>'
+  + esc(c.event) + (c.location ? ', ' + esc(c.location) : '') + (c.when ? ', ' + esc(c.when) : '') + '. '
+  + (c.note ? md(c.note) : '')
+  + '<span class="item-links">' + linkList(c.links) + '</span>'
+  + '</li>';
+
+const year = y => [
+  '<h2 class="group">' + esc(y) + '</h2>',
+  '<ul class="confs" style="list-style: none; padding-left: 0;">',
+  visible.filter(c => String(c.year) === y).map(conf),
+  '</ul>'
+];
+
+const out = visible.length === 0
+  ? '<p class="empty">Talks, posters and workshops will be listed here.</p>'
+  : lines(years.map(year));
+_%>
+<%= out %>

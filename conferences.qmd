@@ -1,0 +1,15 @@
+---
+title: "Conferences"
+subtitle: "Talks, posters and workshops"
+listing:
+  contents: data/conferences.yml
+  template: templates/conferences.ejs
+  type: default
+  sort: false
+  page-size: 1000
+  fields: [year, title, kind, event, location, when, note, links, hidden]
+---
+
+Work I have presented at conferences and workshops.
+
+---

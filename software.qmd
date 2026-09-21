@@ -1,0 +1,39 @@
+---
+title: "Software"
+subtitle: "R functions and packages for everyday analysis"
+---
+
+Small, practical R tools I use in teaching and consultancy. Everything is open source on [GitHub]({{< var github >}}).
+
+---
+
+## R_customR
+
+**Custom functions for everyday R tasks**
+
+[GitHub](https://github.com/nexusofthings/R_customR){.btn .btn-outline-primary .btn-sm}
+
+A script of helpers I reuse. It currently includes `table_aum()`, a version of `table()` that always counts missing values, so gaps in a variable show up in the first frequency table you make.
+
+```r
+source("https://raw.githubusercontent.com/nexusofthings/R_customR/main/custom_functions.R")
+
+table_aum(c("a", "b", NA, "a"))
+```
+
+---
+
+## custom.rgs
+
+**A package version of the same helpers** (in development)
+
+[GitHub](https://github.com/nexusofthings/custom.rgs){.btn .btn-outline-primary .btn-sm}
+
+An early-stage R package exporting `table_aum()` and `fbind()`, which combines two factors into one whose levels are the union of both.
+
+```r
+# install.packages("remotes")
+remotes::install_github("nexusofthings/custom.rgs")
+```
+
+{{< include _generated/repos.md >}}

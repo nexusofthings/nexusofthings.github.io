@@ -1,0 +1,12 @@
+---
+title: "All about funding"
+date: 2023-05-29
+description: "Courses on grant writing and finding funding."
+categories: [Research career]
+aliases: ["/all-about-funding/"]
+---
+
+<!-- The original note also listed "Research Professional" with no link. -->
+
+- Nature Masterclasses: [Grant writing](https://masterclasses.nature.com/grant-writing/18994906).
+- Nature Masterclasses: [Finding funding opportunities online](https://masterclasses.nature.com/finding-funding-opportunities-online-course/23392228).

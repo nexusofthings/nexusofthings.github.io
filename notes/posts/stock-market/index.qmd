@@ -1,0 +1,8 @@
+---
+title: "Stock market"
+date: 2021-10-21
+draft: true
+categories: [Personal]
+---
+
+- <https://hackernoon.com/how-to-become-a-private-home-trader-and-10-tips-to-help-you-get-there>

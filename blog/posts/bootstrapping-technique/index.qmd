@@ -1,0 +1,17 @@
+---
+title: "Bootstrapping technique"
+date: 2023-05-27
+description: "A short introduction to bootstrapping, with pointers to good explanations."
+categories: [Statistics, Resampling]
+aliases: ["/bootstrapping-technique/"]
+---
+
+Bootstrapping!
+
+Those of you who watched Shark Tank India might have heard this word. In business it means thriving with minimum external funding; in statistics it opened a door wide open for making inferences about sample statistics. The method was developed by [Prof. Bradley Efron](https://statistics.stanford.edu/people/bradley-efron). An article in [Significance magazine](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2010.00463.x) explains the technique and its uses in brief, and there are [blog posts](https://data-flair.training/blogs/bootstrapping-in-r/) (among many others) that help with the basic concepts and uses of bootstrapping.
+
+Hope some of you find it interesting.
+
+## Further reading
+
+- [Bootstrapping](https://statisticsbyjim.com/hypothesis-testing/bootstrapping/), Statistics by Jim

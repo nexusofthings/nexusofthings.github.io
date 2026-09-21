@@ -1,0 +1,4 @@
+# Repositories described by hand on the Software page (one per line).
+# The auto-generated "More on GitHub" list skips these, forks and the site/profile repos.
+R_customR
+custom.rgs

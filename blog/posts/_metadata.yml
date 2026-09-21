@@ -1,0 +1,4 @@
+# Applies to every post in this folder.
+toc: true
+title-block-banner: false
+date-format: "D MMMM YYYY"

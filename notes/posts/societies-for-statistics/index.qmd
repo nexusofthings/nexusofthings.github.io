@@ -1,0 +1,10 @@
+---
+title: "Societies for statistics"
+date: 2023-05-27
+draft: true
+categories: [Research career]
+---
+
+- ISMS
+- ISPS
+- International Epidemiology Society

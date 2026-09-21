@@ -1,0 +1,13 @@
+---
+title: "Blog"
+subtitle: "What I learnt, and how I learnt it"
+listing:
+  contents: blog/posts
+  type: default
+  sort: "date desc"
+  categories: true
+  feed: true
+  fields: [date, title, description, categories, reading-time]
+  page-size: 20
+aliases: ["/posts/", "/categories/", "/tags/"]
+---

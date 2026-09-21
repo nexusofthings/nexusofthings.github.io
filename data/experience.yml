@@ -1,0 +1,24 @@
+# Experience. Newest first. Only `title` and `org` are required.
+# Text fields accept **bold**, *italic* and [links](https://example.com).
+#
+# To add a role: copy a block, paste it at the top, edit, commit.
+
+- period: "Present"                     # e.g. "2019 – Present"; add your start year
+  title: "Statistician and Biostatistics Educator"
+  org: "Department of Biostatistics, NIMHANS"
+  org_url: "https://nimhans.ac.in"
+  location: "Bengaluru"
+  bullets:
+    - "Teach statistical methods and research design to MSc Biostatistics students and to PhD scholars in psychiatry, neuroscience, microbiology and social work."
+    - "Provide statistical consultancy on clinical and biomarker research protocols: study design, sample size, analysis plans and interpretation of results."
+    - "Conduct and support original research, with analysis in R, Python, SPSS and Stata."
+
+# Earlier roles go below. Example (delete the `hidden: true` line to publish):
+- period: "2015 – 2019"
+  title: "Biostatistician"
+  org: "Organisation name"
+  org_url: "https://example.org"
+  location: "City"
+  bullets:
+    - "One line on what you did and what it led to."
+  hidden: true                        # delete this line to publish

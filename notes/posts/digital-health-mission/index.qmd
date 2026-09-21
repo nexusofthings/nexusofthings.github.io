@@ -1,0 +1,8 @@
+---
+title: "Digital Health Mission"
+date: 2021-07-10
+draft: true
+categories: [Health data]
+---
+
+- <https://www.prajavani.net/op-ed/editorial/health-card-purpose-data-security-guarantee-editorial-872373.html>

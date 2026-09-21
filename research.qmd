@@ -1,0 +1,32 @@
+---
+title: "Research"
+subtitle: "The methods I work on, and the questions behind them"
+---
+
+My work sits on the statistical side of clinical, neuroscience and psychiatric research. Most of my methodological interests come from problems that arrive through consultancy: a protocol that needs a defensible sample size, a device that has to be validated against a reference, a biomarker whose usefulness has to be put in numbers.
+
+---
+
+## Agreement and reliability
+
+Comparing a new measurement with a reference standard, or with itself over time. Bland–Altman limits of agreement, intraclass correlation, Lin's concordance correlation coefficient, Krippendorff's alpha and test–retest reliability.
+
+## Biomarker evaluation
+
+Quantifying how well single markers and combinations of markers separate clinical groups. ROC analysis, cut-off selection, comparing correlated AUCs with DeLong's test, and cross-validated combined models.
+
+## Study design and sample size
+
+Sample size and power for randomised trials, including cluster, adaptive and sequential multiple assignment (SMART) designs, and for high-dimensional omics studies with false discovery rate control. Protocol review against SPIRIT. Tools I use include the R packages `pmsampsize` and `FDRsamplesize2`.
+
+## Survival and categorical data
+
+Kaplan–Meier estimation, log-rank and stratified log-rank tests, Mantel–Haenszel methods, logistic regression and the difference between odds and probabilities when reporting it.
+
+## Latent variable methods
+
+Structural equation modelling for psychosocial research, including mediation and moderation, model fit and estimation choices, and latent class analysis with cross-validation.
+
+## Reproducible analysis and teaching
+
+Analyses that can be re-run and checked, in R, Python, SPSS and Jamovi, and the teaching materials that help researchers who are not statisticians do the same. See [Teaching](teaching.qmd) and [Notes](notes.qmd).

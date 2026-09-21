@@ -1,0 +1,40 @@
+<%_
+/* QUARTO EJS QUIRK: in Quarto listing templates the "equals" output tag prints RAW html and the
+   "dash" output tag ESCAPES it (the reverse of stock EJS). All escaping is done by esc() and md()
+   below, so the final print at the bottom of each template uses the "equals" tag.
+
+   OUTPUT RULES. Quarto runs this template's output through a markdown parser:
+     - put each HTML element on its own line, starting with a tag;
+     - never emit a blank line (drop empty strings before joining);
+     - never indent lines (4+ spaces starts a code block).
+   Each template therefore builds its output as an array of lines and prints it once at the end.
+
+   Tiny markdown helpers, so YAML text can use **bold**, *italic* and [text](url).
+   Input is HTML-escaped first, so a stray < or & can never break the page. */
+const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/_/g, "&#95;");
+const md = s => esc(s)
+  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, "<a href=\"$2\">$1</a>")
+  .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+  .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>");
+const linkList = arr => (arr || []).map(l => '<a href="' + esc(l.url) + '">' + esc(l.label) + '</a>').join("");
+const lines = arr => arr.flat(Infinity).filter(Boolean).join("\n");
+const visible = items.filter(i => !i.hidden);
+
+const course = c => [
+  '<div class="course">',
+  '<h3>' + esc(c.title) + '</h3>',
+  '<p class="meta">' + [c.audience, c.where, c.period].filter(Boolean).map(esc).join(" &middot; ") + '</p>',
+  c.summary ? '<p>' + md(c.summary) + '</p>' : "",
+  (c.topics && c.topics.length) ? ['<ul class="topics">', c.topics.map(t => '<li>' + esc(t) + '</li>'), '</ul>'] : "",
+  (c.links && c.links.length) ? '<p class="item-links" style="margin: 0.6rem 0 0;">' + linkList(c.links) + '</p>' : "",
+  '</div>'
+];
+
+const out = lines([
+  '<div class="courses">',
+  visible.length === 0 ? '<p class="empty">Courses and workshops will be listed here.</p>' : "",
+  visible.map(course),
+  '</div>'
+]);
+_%>
+<%= out %>

@@ -1,0 +1,21 @@
+---
+title: "R packages by function"
+date: 2021-06-13
+description: "Packages I have found useful, grouped by what they do."
+categories: [R]
+---
+
+## Graphics
+
+Extensions to ggplot2:
+
+- [ggh4x](https://cran.r-project.org/web/packages/ggh4x/index.html)
+- ggpubr
+- ggbeeswarm
+
+## Descriptive statistics
+
+- skimr
+- psych, with its [introductory vignette](https://cran.r-project.org/web/packages/psych/vignettes/intro.pdf)
+- [Descriptive statistics in R](https://chrisdixonacademic.wordpress.com/2021/03/10/descriptive-statistics-in-r/) (blog post)
+- [A video walkthrough](https://www.youtube.com/watch?v=sKrWYE63Vk4)

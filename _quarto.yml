@@ -1,0 +1,88 @@
+project:
+  type: website
+  output-dir: _site
+
+# Code in posts is shown, not run, unless you run it locally and commit _freeze/
+# (see README, "Posts with R code").
+execute:
+  freeze: auto
+
+website:
+  title: "Thomas Anderson"           # also change `name` in _variables.yml
+  site-url: "https://nexusofthings.github.io"
+  repo-url: "https://github.com/nexusofthings/nexusofthings.github.io"
+  description: "Biostatistician, educator and statistical consultant. Notes on what I learnt and how I learnt it."
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+  draft-mode: gone                   # posts with `draft: true` are never published
+  back-to-top-navigation: true
+  bread-crumbs: false
+
+  navbar:
+    search: true
+    left:
+      - text: "Research"
+        href: research.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Software"
+        href: software.qmd
+      - text: "Experience"
+        href: experience.qmd
+      - text: "Conferences"
+        href: conferences.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Writing"
+        menu:
+          - text: "Teaching"
+            href: teaching.qmd
+          - text: "Notes"
+            href: notes.qmd
+          - text: "Blog"
+            href: blog.qmd
+    tools:
+      - icon: github
+        href: https://github.com/nexusofthings
+        text: GitHub
+      # Uncomment and fill in as you create these profiles:
+      # - icon: linkedin
+      #   href: https://www.linkedin.com/in/YOUR-HANDLE/
+      #   text: LinkedIn
+      # - text: '<i class="ai ai-orcid"></i>'
+      #   href: https://orcid.org/0000-0000-0000-0000
+      #   aria-label: ORCID
+      # - text: '<i class="ai ai-google-scholar"></i>'
+      #   href: https://scholar.google.com/citations?user=YOUR-ID
+      #   aria-label: Google Scholar
+      - icon: rss
+        href: blog.xml
+        text: Blog feed
+
+  page-footer:
+    left: |
+      <span id="footer-year"></span> Thomas Anderson. Views are my own.
+    right: |
+      Built with [Quarto](https://quarto.org)
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/light.scss, styles/common.scss]
+      dark: [cosmo, styles/dark.scss, styles/common.scss]
+    include-in-header: includes/header.html
+    include-after-body: includes/footer.html
+    grid:
+      body-width: 860px
+      sidebar-width: 220px
+      margin-width: 220px
+    respect-user-color-scheme: true
+    toc: false
+    toc-title: "On this page"
+    smooth-scroll: true
+    code-copy: true
+    link-external-icon: false
+    link-external-newwindow: true
+    date-format: "D MMM YYYY"
+    lang: en

@@ -1,0 +1,15 @@
+---
+title: "Experience"
+subtitle: "Professional experience and work history"
+listing:
+  contents: data/experience.yml
+  template: templates/experience.ejs
+  type: default
+  sort: false
+  page-size: 1000
+  fields: [period, title, org, org_url, location, bullets, hidden]
+---
+
+Teaching, statistical consultancy and research support in biostatistics, with 10+ years of experience across SPSS, Stata, SAS, R and Python.
+
+---

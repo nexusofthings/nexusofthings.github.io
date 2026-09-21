@@ -1,0 +1,19 @@
+# Courses and workshops. Shown in this order.
+# Required: title.  Optional: audience, where, period, summary, topics, links.
+
+- title: "Biostatistics for MSc students"
+  audience: "MSc Biostatistics"
+  where: "Department of Biostatistics, NIMHANS"
+  summary: "Postgraduate teaching in statistical methods and computing, from probability and inference to analysis in R."
+  topics: ["Probability distributions", "Statistical inference", "R"]
+
+- title: "Statistics and research methods for PhD scholars"
+  audience: "PhD scholars in psychiatry, neuroscience, microbiology and social work"
+  where: "NIMHANS"
+  summary: "Taught with examples from neurology, psychiatry and infectious disease, so that methods are tied to the questions researchers actually ask."
+  topics: ["Study design", "Sampling techniques", "Clinical trials", "Survival analysis", "Structural equation modelling", "Scientific enquiry"]
+
+- title: "Hands-on software workshops"
+  audience: "Researchers and postgraduate students"
+  summary: "Short workshops that walk through a complete analysis on a realistic dataset, so participants leave with a workflow they can repeat."
+  topics: ["SPSS", "R", "Jamovi"]

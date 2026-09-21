@@ -1,0 +1,19 @@
+---
+title: "Reviewing articles for journals"
+date: 2023-05-12
+description: "How reviewing invitations usually arise, and where to find training."
+categories: [Research career]
+aliases: ["/reviewing-article/"]
+---
+
+After building a research profile on sites like ORCID, Google Scholar, ResearchGate, Scopus or PubMed, an editor will typically notice your work and invite you to review a manuscript, or to review for the journal regularly.
+
+Some journals also call for applications, especially from early career researchers, to join as reviewers or editors. Long-term association with a journal (doing well in the tasks given, and sending helpful reviews on time) can earn a place on the editorial board.
+
+## Places to look
+
+- [ABCD index](https://abcdindex.com/): possibly a way to apply to become a reviewer.
+- Taylor & Francis [peer review training programme](https://editorresources.taylorandfrancis.com/reviewer-guidelines/peer-review-training/#upcomingevents).
+- Dove Medical Press [reviewer training programme](https://www.dovepress.com/peer-review-guidelines/reviewer-training-programme).
+- F1000Research uses a [different review process](https://f1000research.com/for-authors/peer-review) from the usual one.
+- PLOS has [excellent resources for reviewers](https://plos.org/resources/for-reviewers/).

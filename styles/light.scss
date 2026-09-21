@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+$ink: #16213A;
+$paper: #F8F9FB;
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: #1D4F91;
+$primary: #1D4F91;
+$headings-color: $ink;
+
+$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "IBM Plex Mono", SFMono-Regular, Menlo, Consolas, monospace;
+$headings-font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+$headings-font-weight: 600;
+$line-height-base: 1.65;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: #0E7C66;
+
+$code-block-bg: #EEF1F6;
+$code-bg: #EEF1F6;
+$code-color: #23304F;
+
+/*-- scss:rules --*/
+:root {
+  --surface: #FFFFFF;
+  --muted: #55607A;
+  --line: #DCE1EA;
+  --accent: #0E7C66;
+  --ink: #16213A;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+}

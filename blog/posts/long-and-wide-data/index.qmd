@@ -1,0 +1,40 @@
+---
+title: "Managing long and wide data formats for data analysis"
+date: 2021-02-16
+description: "Reshaping data between long and wide formats with tidyr's pivot functions."
+categories: [R, Data wrangling]
+---
+
+This is one of the most widely used operations in the exploratory phase of any analysis. A proper understanding of data manipulation between long and wide formats will reduce a lot of pain, especially when the data is unstructured.
+
+We can use the `pivot_*` functions in the [tidyr R package](https://tidyr.tidyverse.org/articles/pivot.html) for these tasks (they were called `gather()` and `spread()` before).
+
+Load the [tidyverse](https://www.tidyverse.org/) set of packages to replicate what follows.
+
+```r
+library(tidyverse)
+
+df1 <- tribble(~ID, ~x,
+               "A", 1,
+               "B", 2,
+               "C", 3)
+
+df2 <- tribble(~ID, ~y,
+               "D", 4,
+               "E", 5,
+               "F", 6)
+
+combined <- df1 %>% dplyr::full_join(df2)
+```
+
+## Dealing with multiple sets of variables
+
+It is important to have consistent naming for variables when dealing with multiple sets of columns. For example, we may have a set of variables collected at different time points.
+
+See this Stack Overflow question on [gathering multiple sets of columns](https://stackoverflow.com/questions/25925556/gather-multiple-sets-of-columns?answertab=active#tab-top).
+
+The [RStudio cheatsheets](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf) are a great way to start exploring related functions. As with many other tasks in R, there are alternative ways to do this, and the [data.table](https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html) package offers a range of flexible functions.
+
+## Additional resources
+
+More detailed information is available [here](https://jhudatascience.org/tidyversecourse/wrangle-data.html#reshaping-the-data) and [here](https://rdatatable.gitlab.io/data.table/).

@@ -1,0 +1,29 @@
+---
+title: "Simulations"
+date: 2022-01-14
+draft: true
+categories: [Statistics, R]
+---
+
+Statistics exists because there is variation! Where there is variation there lies a lot of possibilities! No method is perfect, in the sense that it won't give a perfect result.
+
+Simulation in general refers to an imitation of a real scenario.
+
+In statistics, simulations are used for a multitude of purposes. For example, when one develops (proposes) a new statistical method, it may be needed to prove its mathematical properties, to test its performance under different conditions, or to compare it to a similar existing method. It can also be used to test the temperament of a method, in other words, to test when it "fails".
+
+For all these purposes, one cannot wait to come across "real" datasets to apply and test the method. Instead, methods are tested using synthetic, artificially generated datasets.
+
+It is a lot easier to achieve all that when you have the independence to create a set of data with "known" properties.
+
+Factors to consider:
+
+- Simulation design
+- Assessing performance
+
+There are several specialised R packages that can ....
+
+I have tried a few of them and am noting down a few observations here.
+
+## References
+
+There is a nice article on [Using simulation studies to evaluate statistical methods](https://onlinelibrary.wiley.com/doi/10.1002/sim.8086) by Tim Morris, and an [Introduction to simulation studies in health research](https://bmjopen.bmj.com/content/10/12/e039921).

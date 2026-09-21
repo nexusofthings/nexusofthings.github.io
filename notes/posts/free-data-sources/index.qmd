@@ -1,0 +1,13 @@
+---
+title: "Free data sources"
+date: 2023-05-22
+description: "Open datasets for teaching and practice."
+categories: [Data]
+aliases: ["/free-data-sources/"]
+---
+
+- [National Longitudinal Survey of Youth (NLSY)](https://www.bls.gov/nls/getting-started/accessing-data.htm): a longitudinal dataset.
+- [NHANES](https://wwwn.cdc.gov/nchs/nhanes/), from the US Centers for Disease Control and Prevention.
+- [Monash University data repository](https://bridges.monash.edu/groups).
+- [National Center for Education Statistics](https://nces.ed.gov/).
+- [Bangladesh Fertility Survey 1989](https://ghdx.healthdata.org/record/bangladesh-fertility-survey-1989), on the Global Health Data Exchange.

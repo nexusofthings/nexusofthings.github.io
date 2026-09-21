@@ -1,0 +1,12 @@
+---
+title: "Creating a demo dataset"
+date: 2021-03-16
+draft: true
+categories: [R, Data wrangling]
+---
+
+Oftentimes, we may have to ask someone's help for a task that we are stuck at. Sites like Stack Overflow have such requirements. It may not be feasible to share the entire dataset that we are working on. A better way is to create a representative dataset.
+
+Using base-R functions.
+
+R packages to create datasets.

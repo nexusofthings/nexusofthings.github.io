@@ -1,0 +1,7 @@
+<script>
+  // Footer year stays current without editing the site every January.
+  (function () {
+    var el = document.getElementById("footer-year");
+    if (el) el.textContent = "\u00A9 " + new Date().getFullYear();
+  })();
+</script>

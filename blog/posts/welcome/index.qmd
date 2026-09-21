@@ -1,0 +1,19 @@
+---
+title: "Welcome to the website!"
+date: 2021-01-02
+description: "Why this site exists: a public place to document what I learnt and how I learnt it."
+categories: [About]
+---
+
+Welcome to the NEXUS of things!
+
+I'm a Biostatistician by profession with nearly 10 years of experience in the field. In my career so far, I have had opportunities to use different software products like MS-Excel, SPSS, Stata, SAS and of course R & Python to analyse various datasets. I learnt what I know today both from traditional (books, classrooms, library etc.) and modern (self learning via online, online courses, open source materials) ways of learning. I always wanted a space to put some of these for my own future reference as well as for the benefit of others. A huge thanks to [GitHub](https://github.com/), this place is now my personal-public repository to document "what I learnt, how I learnt".
+
+The focus of this site is on the content rather than on the aesthetics. My knowledge of developing and maintaining websites is very minimal, and this site was originally set up using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
+
+***DISCLAIMER***: I have benefitted a lot from open source materials on websites like [GitHub](https://github.com/), [Stack Overflow](https://stackoverflow.com/), [Software Carpentry](https://software-carpentry.org/) and many more. Some of the content here may just be an adaptation of material found on such sites.
+
+::: {.callout-note}
+## Update, 2026
+The site has moved from Jekyll and Minimal Mistakes to [Quarto](https://quarto.org). The posts are the same; the navigation and layout are new.
+:::

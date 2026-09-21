@@ -1,0 +1,7 @@
+---
+title: "Page not found"
+---
+
+That page does not exist, or has moved. The site was rebuilt in 2026, so some old links will have changed.
+
+Try the [home page](index.qmd), the [Blog](blog.qmd) or the [Notes](notes.qmd), or use the search box in the top right.

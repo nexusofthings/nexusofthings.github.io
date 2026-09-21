@@ -1,0 +1,8 @@
+---
+title: "Book idea: data entry mistakes and data preparation"
+date: 2021-05-19
+draft: true
+categories: [Ideas]
+---
+
+Writing a book (using R bookdown!) about common data entry mistakes and data preparation for analysis in any statistical software (with hyperlinks!).

@@ -1,0 +1,13 @@
+---
+title: "Notes"
+subtitle: "Reference notes and link collections"
+listing:
+  contents: notes/posts
+  type: table
+  sort: "date desc"
+  categories: true
+  fields: [date, title, categories]
+  page-size: 50
+---
+
+Short notes for future me: data sources, tools, and resources I want to be able to find again. Longer write-ups are on the [Blog](blog.qmd).

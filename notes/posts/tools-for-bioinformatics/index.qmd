@@ -1,0 +1,32 @@
+---
+title: "Tools for bioinformatics"
+date: 2021-09-30
+description: "Work in progress: choosing and organising tools so analyses stay reproducible."
+categories: [Bioinformatics, Statistical genetics]
+---
+
+::: {.callout-note}
+Work in progress.
+:::
+
+There is no single universal tool for bioinformatics, as it is a broad discipline and much depends on the question being asked and the context. Whatever the tool, make sure the analysis is replicable and reproducible.
+
+Tools: vcftools and bcftools, for statistics on VCF files and association analysis.
+
+## Tracking issues
+
+Choose software that has directly accessible documentation and is maintained regularly. Most of it is hosted on open platforms like GitHub, where issues can be tracked.
+
+## Repeating tasks
+
+Usually the same analysis has to be repeated across samples or cohorts. Linux's built-in ability to run jobs in parallel, or in a for-loop, comes in handy here.
+
+## Keeping code in a repository
+
+Using a code repository such as GitHub for all code and related documents is a great idea in such analyses. It is even more useful when working with other researchers, because shared work enhances productivity.
+
+- **What it is:** a popular platform, online and offline, that hosts code and offers tools to integrate code, documentation and other project content. It is partly free for research and educational use, with paid plans for more features.
+- **What it does:** public and private repositories. Visit [GitHub](https://github.com) for detailed tutorials.
+- **Why use it:** it gives your work visibility.
+- **How others contribute:** pull requests and new issues. Successful collaborative projects include Biopython, Galaxy, SAMtools and rOpenSci, among many others.
+- **Alternatives:** SourceForge, Bitbucket and GitLab.

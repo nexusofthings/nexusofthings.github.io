@@ -1,0 +1,15 @@
+---
+title: "Teaching"
+subtitle: "Courses and workshops"
+listing:
+  contents: data/teaching.yml
+  template: templates/teaching.ejs
+  type: default
+  sort: false
+  page-size: 1000
+  fields: [title, audience, where, period, summary, topics, links, hidden]
+---
+
+I teach statistical methods and research design to postgraduate and PhD researchers, most of whom are clinicians and laboratory scientists rather than statisticians. I try to start from their questions and datasets, and to teach the method that answers them.
+
+---

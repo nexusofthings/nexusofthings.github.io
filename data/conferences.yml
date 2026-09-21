@@ -1,0 +1,15 @@
+# Conferences, talks, posters and workshops you presented. Grouped by `year`, newest first.
+# Required: year, title, event.  Optional: kind, location, when, note, links.
+# kind: Talk | Poster | Invited talk | Workshop | Panel
+#
+# To add one: copy the block below, delete the `hidden: true` line, fill it in.
+
+- year: 2026
+  title: "Title of your talk or poster"
+  kind: "Talk"
+  event: "Name of the conference"
+  location: "City"
+  when: "12 March"
+  links:
+    - { label: "Slides", url: "https://example.org/slides.pdf" }
+  hidden: true                        # delete this line to publish

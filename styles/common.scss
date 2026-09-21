@@ -1,0 +1,158 @@
+/*-- scss:rules --*/
+
+// ---------- Base ----------
+body { -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
+h2 { margin-top: 2.2rem; }
+main a:not(.btn):not(.nav-link):not(.dropdown-item) { text-underline-offset: 0.18em; }
+a:focus-visible, .btn:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+// ---------- Chrome ----------
+.navbar { border-bottom: 1px solid var(--line); }
+.navbar-title, .navbar-brand { font-family: var(--font-serif); font-weight: 600; font-size: 1.15rem; }
+.nav-footer { border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--muted); }
+
+// ---------- Page titles ----------
+#title-block-header .title { font-size: clamp(2rem, 4.5vw, 2.7rem); line-height: 1.1; }
+#title-block-header .subtitle { color: var(--muted); font-size: 1.15rem; }
+
+// ---------- Divider: a confidence-interval whisker ----------
+// Used wherever a page has `---`. One line, two end caps, one point estimate.
+hr {
+  border: 0;
+  opacity: 1;
+  height: 13px;
+  margin: 2.4rem 0;
+  color: var(--line);
+  background:
+    radial-gradient(circle, var(--accent) 0 4px, transparent 4.5px) center / 13px 13px no-repeat,
+    linear-gradient(currentColor, currentColor) left center / 1px 100% no-repeat,
+    linear-gradient(currentColor, currentColor) right center / 1px 100% no-repeat,
+    linear-gradient(currentColor, currentColor) center / 100% 1px no-repeat;
+}
+
+// ---------- Home: hero ----------
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 1.5rem 0 0.5rem;
+}
+.hero .hero-name {
+  font-weight: 600;
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 5.2vw, 3.4rem);
+  line-height: 1.04;
+  margin: 0 0 0.5rem;
+}
+.hero .role { font-size: 1.1rem; color: var(--muted); margin: 0 0 1rem; }
+.hero blockquote {
+  margin: 0 0 1rem;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid var(--accent);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+}
+.hero blockquote p { margin: 0; }
+.hero .hero-photo { margin: 0; }
+.hero .hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  margin: 0;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.1rem 0; }
+.chips p { display: contents; }
+.chip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.86rem;
+}
+.hero-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hero-links p { display: contents; }
+.hero-links .btn { margin: 0; }
+
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; gap: 1.25rem; }
+  .hero .hero-photo { order: -1; max-width: 150px; }
+}
+
+// ---------- Home: section tiles ----------
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+.tile {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  padding: 1rem 1.15rem 1.1rem;
+}
+.tile h3 { margin: 0 0 0.35rem; font-size: 1.12rem; }
+.tile h3 a { text-decoration: none; }
+.tile h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; } // whole tile is the link
+.tile p { margin: 0; color: var(--muted); font-size: 0.93rem; line-height: 1.5; }
+.tile:hover { border-color: var(--accent); }
+.tile:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+// ---------- Listing-driven pages (data/*.yml) ----------
+.empty { color: var(--muted); font-style: italic; }
+.quarto-listing-container-custom { margin-top: 0.5rem; }
+
+.entries .entry {
+  display: grid;
+  grid-template-columns: 10.5rem minmax(0, 1fr);
+  gap: 0 1.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--line);
+}
+.entries .entry:first-child { border-top: 0; padding-top: 0.5rem; }
+.entry .when { color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.entry .when .place { display: block; }
+.entry h3 { margin: 0 0 0.15rem; font-size: 1.2rem; }
+.entry .org { margin: 0 0 0.5rem; font-weight: 500; }
+.entry ul { margin: 0; padding-left: 1.1rem; }
+.entry li { margin-bottom: 0.3rem; }
+@media (max-width: 640px) { .entries .entry { grid-template-columns: 1fr; } .entry .when { margin-bottom: 0.25rem; } }
+
+h2.group { font-size: 1.35rem; margin: 2rem 0 0.75rem; }
+ol.pubs, ol.confs { padding-left: 1.4rem; }
+ol.pubs li, ol.confs li { margin-bottom: 0.9rem; padding-left: 0.2rem; }
+.item-links { display: inline-flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; margin-left: 0.35rem; font-size: 0.88rem; }
+.item-links a::before { content: "["; color: var(--muted); }
+.item-links a::after { content: "]"; color: var(--muted); }
+.kind { color: var(--muted); font-size: 0.88rem; }
+
+.courses { display: grid; gap: 1rem; }
+.course {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  padding: 1rem 1.25rem 1.1rem;
+}
+.course h3 { margin: 0 0 0.15rem; font-size: 1.2rem; }
+.course .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.6rem; }
+.course p { margin: 0 0 0.6rem; }
+.topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
+.topics li { border: 1px solid var(--line); border-radius: 999px; padding: 0.05rem 0.65rem; font-size: 0.82rem; margin: 0; }
+
+// ---------- Software ----------
+.repo-meta { color: var(--muted); font-size: 0.9rem; }
+
+// ---------- Print (useful for the CV page) ----------
+@media print {
+  .navbar, .nav-footer, #quarto-back-to-top, .hero-links { display: none !important; }
+  hr { margin: 1.2rem 0; }
+}

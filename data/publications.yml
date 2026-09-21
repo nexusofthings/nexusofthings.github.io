@@ -1,0 +1,19 @@
+# Publications. Order on the page: grouped by `type`, newest year first.
+# type: journal | report | preprint | chapter | thesis | other
+# Required: type, year, authors, title.  Optional: venue, details, doi, url, note, links.
+# Put your own name in **bold** in `authors`.
+#
+# To add one: copy the block below, delete the `hidden: true` line, fill it in.
+
+- type: journal
+  year: 2026
+  authors: "**Anderson T**, Coauthor A, Coauthor B"
+  title: "Title of the paper"
+  venue: "Journal Name"
+  details: "12(3), 45–67"
+  doi: "10.0000/example"                # just the DOI, not the full URL
+  url: ""                               # optional: link for the title
+  links:                                # optional extras
+    - { label: "PDF", url: "https://example.org/paper.pdf" }
+    - { label: "Code", url: "https://github.com/nexusofthings/example" }
+  hidden: true                        # delete this line to publish

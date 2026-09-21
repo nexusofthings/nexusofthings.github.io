@@ -1,0 +1,50 @@
+<%_
+/* QUARTO EJS QUIRK: in Quarto listing templates the "equals" output tag prints RAW html and the
+   "dash" output tag ESCAPES it (the reverse of stock EJS). All escaping is done by esc() and md()
+   below, so the final print at the bottom of each template uses the "equals" tag.
+
+   OUTPUT RULES. Quarto runs this template's output through a markdown parser:
+     - put each HTML element on its own line, starting with a tag;
+     - never emit a blank line (drop empty strings before joining);
+     - never indent lines (4+ spaces starts a code block).
+   Each template therefore builds its output as an array of lines and prints it once at the end.
+
+   Tiny markdown helpers, so YAML text can use **bold**, *italic* and [text](url).
+   Input is HTML-escaped first, so a stray < or & can never break the page. */
+const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/_/g, "&#95;");
+const md = s => esc(s)
+  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, "<a href=\"$2\">$1</a>")
+  .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+  .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>");
+const linkList = arr => (arr || []).map(l => '<a href="' + esc(l.url) + '">' + esc(l.label) + '</a>').join("");
+const lines = arr => arr.flat(Infinity).filter(Boolean).join("\n");
+const visible = items.filter(i => !i.hidden);
+
+const groups = [
+  { key: "journal",  title: "Journal Articles" },
+  { key: "report",   title: "Technical Reports & Notes" },
+  { key: "preprint", title: "Preprints" },
+  { key: "chapter",  title: "Book Chapters" },
+  { key: "thesis",   title: "Theses" },
+  { key: "other",    title: "Other" }
+];
+const all = visible.slice().sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0));
+
+const pub = p => '<li>'
+  + md(p.authors) + ' (' + esc(p.year) + '). &ldquo;'
+  + (p.url ? '<a href="' + esc(p.url) + '">' + md(p.title) + '</a>' : md(p.title)) + '.&rdquo; '
+  + (p.venue ? '<em>' + esc(p.venue) + '</em>' + (p.details ? ', ' + esc(p.details) : '') + '. ' : '')
+  + (p.note ? md(p.note) : '')
+  + '<span class="item-links">' + (p.doi ? '<a href="https://doi.org/' + esc(p.doi) + '">DOI</a>' : '') + linkList(p.links) + '</span>'
+  + '</li>';
+
+const group = g => {
+  const rows = all.filter(p => (p.type || "other") === g.key);
+  return rows.length ? ['<h2 class="group">' + g.title + '</h2>', '<ol class="pubs">', rows.map(pub), '</ol>'] : "";
+};
+
+const out = all.length === 0
+  ? '<p class="empty">Publications will be listed here.</p>'
+  : lines(groups.map(group));
+_%>
+<%= out %>
