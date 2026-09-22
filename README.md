@@ -1,7 +1,8 @@
 # nexusofthings.github.io
 
-Personal site built with [Quarto](https://quarto.org), modelled on kskbhat.github.io: research, publications,
-software, experience, conferences, CV, teaching, notes and a blog. It rebuilds and deploys on every push.
+Personal site built with [Quarto](https://quarto.org), modelled on other publicly available sites to document my academic and personal information (and of course, with the help of AI). 
+
+It rebuilds and deploys on every push.
 
 ## Preview locally
 
